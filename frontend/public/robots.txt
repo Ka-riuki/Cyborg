@@ -1,0 +1,13 @@
+# Disallow all crawling for production API
+User-agent: *
+Disallow: /api/
+Disallow: /swagger-ui/
+Disallow: /v3/api-docs/
+
+# Allow frontend access
+Allow: /$
+Allow: /index.html
+Allow: /static/
+
+# Sitemap
+Sitemap: https://kenyanhotels.ke/sitemap.xml
